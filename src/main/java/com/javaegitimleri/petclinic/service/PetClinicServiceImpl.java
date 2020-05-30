@@ -61,6 +61,11 @@ public class PetClinicServiceImpl implements PetClinicService {
 		
 	}
 
+	/**
+	 *
+	 * @param lastName
+	 * @return
+	 */
 	@Override
 	@Transactional(propagation = Propagation.SUPPORTS , readOnly = true)
 	public List<Owner> findOwners(String lastName) {
